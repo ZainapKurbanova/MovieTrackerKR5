@@ -4,6 +4,6 @@ import { MoviePresenter }  from './presenter.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const model     = new MovieModel();
-  const view      = new AppView(document.body);
+  const view      = new AppView();
   new MoviePresenter(model, view);
 });
